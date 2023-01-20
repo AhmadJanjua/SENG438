@@ -2,12 +2,12 @@
 
 **Lab. Report \#1 – Introduction to Testing and Defect Tracking**
 
-| Group: Group Number      |
+| Group: Group Number   28  |
 |-----------------|
-| Student 1 name                |   
-| Student 2 name              |   
-| Student 3 name               |   
-| Student 4 name                |   
+| Student 1 name:   Ahmad Janjua        |   
+| Student 2 name:   Maxwell Kepler      |   
+| Student 3 name:   Christopher Luk     |   
+| Student 4 name:   Matthew Ho          |   
 
 
 **Table of Contents**
