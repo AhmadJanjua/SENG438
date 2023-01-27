@@ -54,7 +54,7 @@ Text…
 
 # How the pair testing was managed and team work/effort was divided 
 
-Text…
+The pair testing for this project was managed in a randomized fashion as it was the first time that the team was working together. This approach allowed for a fair distribution of tasks and ensured that everyone had an opportunity to work with different team members. In addition, teamwork and effort was divided as equitably as possible, with each team member being given the opportunity to work on tasks that they specialized in and felt most comfortable with. This approach ensured that everyone had the opportunity to utilize their strengths and contribute to the project in a meaningful way. To ensure that the pair testing was conducted effectively, the team established clear protocols and guidelines for testing and reporting results, which helped to streamline the process and ensure consistency. Furthermore, the team held regular meetings to discuss progress, share feedback, and make any necessary adjustments to the testing strategy. To facilitate continuous communication, the team also utilized an online group chat that allowed team members to voice their thoughts and ask questions, as well as have discussions on any matters that required attention. This helped to ensure that everyone was on the same page and any issues were addressed in a timely manner, which contributed to the overall success of the project. Overall, the team's approach to pair testing, division of effort, and communication was well-coordinated, efficient, and effective, which helped to ensure that the project was completed successfully.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
