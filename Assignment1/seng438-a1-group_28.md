@@ -34,8 +34,7 @@ learned	1](#difficulties-encountered-challenges-overcome-and-lessons-learned)
 
 # Introduction
 
-An introduction of your lab work, and what you knew about exploratory and manual
-functional testing before this lab
+In the lab, we worked on testing a system for its functionality. The system under test (SUT) was an ATM, which was to be used by customers, operators, and a bank. The idea was to try different methods of testing that we learned in class without knowing the underlying implementation of the ATM. The lab also subdivided the group into pairs to help familiarize the team with roles in development. The first method the group performed was exploratory testing, which was done in pairs of two. Exploratory testing is where individuals test a system as they wish, identifying design aspects from the requirements and testing them as they come across them. There is no heavy planning involved, just a general objective. The next method used to test the system was manual scripted testing. Manual scripted tests are tests that are written beforehand and then implemented by the tester. In our case, the tests were provided to us, and we tested all the given functionalities. Lastly, the method tested was regression testing, which is done on newer versions to see if bugs were resolved or were still in progress. The group did regression on the manual scripted tests. Overall, the lab was about the group working together and testing an ATM system using exploratory tests, manual scripted tests, and regression.
 
 # High-level description of the exploratory testing plan
 
@@ -50,7 +49,8 @@ Text…
 
 # Notes and discussion of the peer reviews of defect reports
 
-Text…
+After conducting peer reviews of the defect reports, some similarities and differences were identified. One similarity was that some of the tests were the same across the two teams. They tested the same functionality with the same edge cases. This was beneficial in validating the legitimacy of the tests across the pairs. It improved the ability to cross reference those specific tests. Another similarity found was that some tests tested the same functionality, but on different edge cases. This provided the benefit that the functionality was more thoroughly tested, but at the cost of using up more resources and increasing the redundancy. This is not desirable because that means much time and resources are spent on one object, when it would benefit from distributing the resource on other tests. 
+A benefit of the peer reviews on the defect reports was reflected upon the clarity of the reports produced by each group. It made it easy to check if the report written was understandable to a person who did not write the bug report. It gave us the ability to select the best and most beneficial content to include in the defect report and reject information that would otherwise be of no substance. However, there was a  downside to the pair oriented process. Merging, ensuring there were no duplicates and standardizing the two teams' work required time and effort. This method was good for individuals learning the methodology of writing defect reports, but is not efficient for those that have experience. Overall the peer reviews of the defect report gave insight and clarity on how to construct and effectively write effective defect reports.
 
 # How the pair testing was managed and team work/effort was divided 
 
