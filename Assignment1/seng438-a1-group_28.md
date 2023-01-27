@@ -16,21 +16,21 @@ test commit
 (When you finish writing, update the following list using right click, then
 “Update Field”)
 
-[1 Introduction	1](#_Toc439194677)
+[1 Introduction	1](#introduction)
 
-[2 High-level description of the exploratory testing plan	1](#_Toc439194678)
+[2 High-level description of the exploratory testing plan	1](#high-level-description-of-the-exploratory-testing-plan)
 
-[3 Comparison of exploratory and manual functional testing	1](#_Toc439194679)
+[3 Comparison of exploratory and manual functional testing	1](#comparison-of-exploratory-and-manual-functional-testing)
 
-[4 Notes and discussion of the peer reviews of defect reports	1](#_Toc439194680)
+[4 Notes and discussion of the peer reviews of defect reports	1](#notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
 [5 How the pair testing was managed and team work/effort was
-divided	1](#_Toc439194681)
+divided	1](#how-the-pair-testing-was-managed-and-team-workeffort-was-divided)
 
 [6 Difficulties encountered, challenges overcome, and lessons
-learned	1](#_Toc439194682)
+learned	1](#difficulties-encountered-challenges-overcome-and-lessons-learned)
 
-[7 Comments/feedback on the lab and lab document itself	1](#_Toc439194683)
+[7 Comments/feedback on the lab and lab document itself	1](#commentsfeedback-on-the-lab-and-lab-document-itself)
 
 # Introduction
 
@@ -58,8 +58,12 @@ The pair testing for this project was managed in a randomized fashion as it was 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+Within the course of the assignment, it was initially confusing due to the unfamiliarity of working with a new group of people and a program that required experimentation to learn, presented a number of difficulties and challenges. One of the main difficulties encountered was not knowing anyone in the group and trying to establish effective communication and collaboration. Additionally, working with a program that none of us were familiar with, proved to be a challenge as it required a lot of experimentation and trial and error to learn how to use it effectively. Another challenge was not knowing how to use JIRA, which is a tool that was integral to the project, but required additional learning and effort to master. Despite these difficulties, the team was able to overcome them through persistence, communication, and a willingness to learn and experiment. Ultimately, this assignment taught us valuable lessons about the importance of effective communication, the benefits of experimentation and learning, and the power of persistence in the face of challenges.
 
 # Comments/feedback on the lab and lab document itself
 
-Text…
+The lab in question was found to be quite effective as an ice breaker for the team, as it provided an opportunity for team members to work together for the first time and get to know one another. The lab itself was well-designed, providing an appropriate level of complexity and engagement for the group. The simplicity of the lab allowed for everyone to understand the task at hand and work together effectively, however, it also provided enough work to keep everyone occupied and engaged throughout the duration of the lab, even though it could be considered tedious, but it was also engaging.
+One of the main challenges encountered during the lab was the use of JIRA. Due to the lack of prior knowledge and understanding of the purpose and functionality of JIRA, the team initially struggled to navigate and utilize the tool effectively. This presented a significant challenge for the team, as JIRA was an integral part of the project, and its proper use was crucial to the success of the lab. Despite this, the team was able to overcome this challenge through persistence, communication, and a willingness to learn and experiment.
+In terms of the lab document itself, it provided clear instructions and guidelines for conducting the lab, and was well-organized and easy to follow. However, the team did mention that they found it hard to understand the purpose of JIRA without any prior knowledge or understanding.
+Overall, the lab was a positive experience for the team and provided a valuable opportunity for team members to work together and learn from one another. The challenges encountered during the lab served as valuable learning experiences that helped to strengthen the team's ability to work together effectively.
+
