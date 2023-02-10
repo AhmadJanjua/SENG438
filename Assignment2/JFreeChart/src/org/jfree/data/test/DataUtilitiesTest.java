@@ -321,9 +321,58 @@ public class DataUtilitiesTest extends DataUtilities {
 		assertArrayEquals("The createNumberArray2d did not create an uneven array.", expectedValue, actualValue);
 	}
 	
+	@Test
+	public void create2DNullArray() {
+		try {
+			DataUtilities.createNumberArray2D(null);
+			fail();
+		} catch (Exception e) {
+			assertEquals("Exception IllegalArgumentException", IllegalArgumentException.class, e.getClass());
+		}
+	}
 	
 	@Test
-	public void createEmpty2dArray() {
+	public void create2DNumberArray_MultipleRowMultipleColumns() {
+	    // Arrange
+	    mockingContext.checking(new Expectations() {{
+	        one(values).getRowCount();
+	        will(returnValue(2));
+	        one(values).getColumnCount();
+	        will(returnValue(3));
+	        
+	        allowing(values).getValue(0, 0);
+	        will(returnValue(1.0));
+	        allowing(values).getValue(0, 1);
+	        will(returnValue(2.0));
+	        allowing(values).getValue(0, 2);
+	        will(returnValue(3.0));
+	        
+	        allowing(values).getValue(1, 0);
+	        will(returnValue(3.0));
+	        allowing(values).getValue(1, 1);
+	        will(returnValue(2.0));
+	        allowing(values).getValue(1, 2);
+	        will(returnValue(1.0));
+	    }});
+
+	    // Act
+	    Number[][] result = new Number[][] {{
+	        values.getValue(0, 0),
+	        values.getValue(0, 1),
+	        values.getValue(0, 2),
+	    },{
+	        values.getValue(1, 0),
+	        values.getValue(1, 1),
+	        values.getValue(1, 2)
+	    }};
+
+	    // Assert
+	    Number[][] expected = new Number[][] {{1.0, 2.0, 3.0}, {3.0,2.0,1.0}};
+	    assertArrayEquals(expected, result);
+	}
+	
+	@Test
+	public void createEmpty2DArray() {
 		Number [][] expectedValue = {{},{}};
 		double [][] doubleArray = {{},{}};
 		Number [][] actualValue = DataUtilities.createNumberArray2D(doubleArray);
