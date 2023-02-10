@@ -29,7 +29,119 @@ public class RangeTest {
     public void tearDown() {
     	exampleRange = null;
     }
+    //Test Cases for: getLowerBound()
+    @Test
+    public void getLowerBoundBothNegative_GreaterNegativeAndLesserNegative() {
+        double expected = -2;
+        double actual = exampleRange[0].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
 
+    @Test
+    public void getLowerBoundBothNegativeEqualValues() {
+        double expected = -1;
+        double actual = exampleRange[1].getLowerBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getLowerBoundNegativeAndZero() {
+        double expected = -1;
+        double actual = exampleRange[2].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void getLowerBoundZeroZero() {
+        double expected = 0;
+        double actual = exampleRange[3].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void getLowerBoundZeroPositive() {
+        double expected = 0;
+        double actual = exampleRange[4].getLowerBound();
+        assertEquals(expected, actual,0);
+    }
+    
+    @Test
+    public void getLowerBoundPositiveBothSame() {
+        double expected = 1;
+        double actual = exampleRange[5].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void getLowerBoundPositive_SmallerValueAndGreaterValue() {
+        double expected = 1;
+        double actual = exampleRange[6].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void getLowerBoundMixedPositiveNegtaive() {
+        double expected = -2;
+        double actual = exampleRange[7].getLowerBound();
+        assertEquals(expected, actual, 0);
+    }
+       
+    //Test Cases For: getUpperBound()
+    @Test
+    public void getUpperBoundBothNegative_GreaterNegativeAndLesserNegative() {
+        double expected = -1;
+        double actual = exampleRange[0].getUpperBound();
+        assertEquals(expected, actual, 0);
+    }
+
+    @Test
+    public void getUpperBoundBothNegativeEqualValues() {
+        double expected = -1;
+        double actual = exampleRange[1].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundNegativeSmallerPositive() {
+        double expected = 0;
+        double actual = exampleRange[2].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundBothZeros() {
+        double expected = 0;
+        double actual = exampleRange[3].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundPositiveSmallerPositive() {
+        double expected = 1;
+        double actual = exampleRange[4].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundBothPositivesEqualValues() {
+        double expected = 1;
+        double actual = exampleRange[5].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundPositive_SmallerValueAndGreaterValue() {
+        double expected = 2;
+        double actual = exampleRange[6].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
+
+    @Test
+    public void getUpperBoundBothPositivesSmallerGreater() {
+        double expected = 2;
+        double actual = exampleRange[7].getUpperBound();
+        assertEquals(expected, actual,0);
+    }
     
 // TEST CASES FOR: toString()
     @Test
