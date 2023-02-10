@@ -199,8 +199,9 @@ public class RangeTest {
     	assertEquals(
         		"Make sure the range for a negative and positive number is represented correctly",
         		"Range[1.0,2.0]",
-        		exampleRange[6].toString());
+        		exampleRange[7].toString());
     }  
+    
     
     //Testing length method
     @Test
