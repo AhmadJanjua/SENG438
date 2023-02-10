@@ -37,8 +37,11 @@ public class DataUtilitiesTest extends DataUtilities {
 	// Testing for valid Key, value pairs with many entries
 	@Test
 	public void cummulativePercentValidManyItem() {
+		KeyedValues expected = mockingContext.mock(KeyedValues.class, "KeyValue2");
 		mockingContext.checking(new Expectations() {
 			{
+				// Used for setup
+				
 				// Number of items
 				allowing(keyValues).getItemCount();
 				will(returnValue(3));
@@ -65,18 +68,49 @@ public class DataUtilitiesTest extends DataUtilities {
 				allowing(keyValues).getValue(1);
 				will(returnValue(9));
 				allowing(keyValues).getValue(2);
-				will(returnValue(2));	
+				will(returnValue(2));
+				
+				// EXPECTED VALUES
+				// Number of items
+				allowing(expected).getItemCount();
+				will(returnValue(3));
+				
+				// getKey
+				allowing(expected).getKey(0);
+				will(returnValue(0));
+				allowing(expected).getKey(1);
+				will(returnValue(1));
+				allowing(expected).getKey(2);
+				will(returnValue(2));
+				
+				// getIndex
+				allowing(expected).getIndex(0);
+				will(returnValue(0));
+				allowing(expected).getIndex(1);
+				will(returnValue(1));
+				allowing(expected).getIndex(2);
+				will(returnValue(2));
+				
+				// getValue
+				allowing(expected).getValue(0);
+				will(returnValue(0.3125));
+				allowing(expected).getValue(1);
+				will(returnValue(0.875));
+				allowing(expected).getValue(2);
+				will(returnValue(1.0));	
 			}
 		});
 	    KeyedValues actual = DataUtilities.getCumulativePercentages(keyValues);
-	    assertTrue(actual.equals(keyValues));
+	    assertTrue(actual.equals(expected));
 	}
 	
 	// Testing for valid Key, value pairs with single entries
 	@Test
 	public void cummulativePercentValidOneItem() {
+		KeyedValues expected = mockingContext.mock(KeyedValues.class, "KeyValue2");
 		mockingContext.checking(new Expectations() {
 			{
+				// Setup value
 				// Number of items
 				allowing(keyValues).getItemCount();
 				will(returnValue(1));
@@ -92,10 +126,27 @@ public class DataUtilitiesTest extends DataUtilities {
 				// getValue
 				allowing(keyValues).getValue(0);
 				will(returnValue(5));	
+				
+				// EXPECTED
+				// Number of items
+				allowing(expected).getItemCount();
+				will(returnValue(1));
+				
+				// getKey
+				allowing(expected).getKey(0);
+				will(returnValue(0));
+				
+				// getIndex
+				allowing(expected).getIndex(0);
+				will(returnValue(0));
+
+				// getValue
+				allowing(expected).getValue(0);
+				will(returnValue(1));	
 			}
 		});
 	    KeyedValues actual = DataUtilities.getCumulativePercentages(keyValues);
-	    assertTrue(actual.equals(keyValues));
+	    assertTrue(actual.equals(expected));
 	}
 	
 	// Test for key, value pair with no entries.
