@@ -88,5 +88,27 @@ public class RangeTest {
         		"Make sure the range for a negative and positive number is represented correctly",
         		"Range[1.0,2.0]",
         		exampleRange[6].toString());
-    }  
+    }
+    @Test
+    public void containsStandardValues() {
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[7].contains(0);
+    	assertTrue("contains is not returning the correct value for a basic functionality", expectedValue == actualValue);
+    }
+    
+    @Test
+    public void containsNegativeValues() {
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[0].contains(0);
+    	assertFalse("contains is not returning the correct value for the basic functionality", expectedValue == actualValue);
+    }
+    
+    @Test
+    public void containsSmallRange() {
+    	//These are same values but they are different in terms of the fact that they are negative numbers instead
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[3].contains(0);
+    	assertTrue("contains is not returning a value where when range is one number", expectedValue == actualValue);
+    }
+    
 }
