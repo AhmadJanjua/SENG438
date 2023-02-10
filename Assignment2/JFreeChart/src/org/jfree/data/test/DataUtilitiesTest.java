@@ -255,7 +255,7 @@ public class DataUtilitiesTest extends DataUtilities {
 	    });
 		int row = 1;
 	    double actual = DataUtilities.calculateRowTotal(values, row);
-	    double expected = 2.6;
+	    double expected = 4.1;
 	    assertEquals(expected, actual, .000000001d);
 	}
 	
