@@ -662,4 +662,3 @@ public class DataUtilitiesTest extends DataUtilities {
 			    assertArrayEquals(expected, result);
 	    }
 }
-}
