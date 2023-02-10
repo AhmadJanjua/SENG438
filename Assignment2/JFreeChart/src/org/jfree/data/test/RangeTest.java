@@ -201,4 +201,61 @@ public class RangeTest {
         		"Range[1.0,2.0]",
         		exampleRange[6].toString());
     }  
+    
+    //Testing length method
+    @Test
+    public void lengthWithTwoDiffNeg() {
+    	double expected = 1;
+    	double actual = exampleRange[0].getLength();
+    	assertEquals("Checking the length for two different negative numbers.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithTwoSameNeg() {
+    	double expected = 0;
+    	double actual = exampleRange[1].getLength();
+    	assertEquals("Checking the length for the same two negative numbers.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithZeroAndNeg() {
+    	double expected = 1;
+    	double actual = exampleRange[2].getLength();
+    	assertEquals("Checking the length for a negative number and zero.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithTwoZeros() {
+    	double expected = 0;
+    	double actual = exampleRange[3].getLength();
+    	assertEquals("Checking the length for two zeros.", expected, actual, .000000001d);
+    }
+
+    @Test
+    public void lengthWithZeroAndPos() {
+    	double expected = 1;
+    	double actual = exampleRange[4].getLength();
+    	assertEquals("Checking the length for a positive number and zero.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithTwoSamePos() {
+    	double expected = 0;
+    	double actual = exampleRange[5].getLength();
+    	assertEquals("Checking the length for the same positive number.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithTwoDiffPos() {
+    	double expected = 1;
+    	double actual = exampleRange[6].getLength();
+    	assertEquals("Checking the length for two different positive numbers.", expected, actual, .000000001d);
+    }
+    
+    @Test
+    public void lengthWithNegAndPos() {
+    	double expected = 4;
+    	double actual = exampleRange[7].getLength();
+    	assertEquals("Checking the length for a negative and positive numbers.", expected, actual, .000000001d);
+    }
 }
