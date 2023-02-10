@@ -283,38 +283,25 @@ public class DataUtilitiesTest extends DataUtilities {
 	    double expected = 0.0;
 	    assertEquals(expected, actual, .000000001d);
 	}
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void calculateRowTotalForInvalidIndex(){
+		mockingContext.checking(new Expectations() {
+	        {
+	        	one(values).getRowCount();
+	        	will(returnValue(1));
+	            one(values).getColumnCount();
+	        	will(returnValue(1));
+	            one(values).getValue(-1, 0);
+	            will(throwException(new IndexOutOfBoundsException()));         
+	        }
+	    });
+		int row = -1;
+		double actual = DataUtilities.calculateRowTotal(values, row);
+	    double expected = 0.0;
+	    assertEquals(expected, actual, .000000001d);
+	}
 
-//	@Test(expected = IndexOutOfBoundsException.class)
-//	public void calculateRowTotalForInvalidIndex(){
-//		mockingContext.checking(new Expectations() {
-//	        {
-//	        	one(values).getRowCount();
-//	        	will(returnValue(1));
-//	            one(values).getColumnCount();
-//	        	will(returnValue(1));
-//	            one(values).getValue(-1, 0);
-//	            will(throwException(new IndexOutOfBoundsException()));         
-//	        }
-//	    });
-//		int row = -1;
-//		double actual = DataUtilities.calculateRowTotal(values, row);
-//	    double expected = 0.0;
-//	    assertEquals(expected, actual, .000000001d);
-//	    //fail();
-//	            //one(values).getRowCount();
-//	        	//will(returnValue(2));
-//	            one(values).getColumnCount();
-//	        	will(returnValue(1));
-//	            one(values).getValue(0, 0);
-//	            will(returnValue(7.5));
-//	            one(values).getValue(1, 0);
-//	            will(returnValue(2.5));
-//	        }
-//	    });
-//	    double actual = DataUtilities.calculateColumnTotal(values, 0);
-//	    double expected = 10.0;
-//	    assertEquals(actual, expected, .000000001d);
-//	}
 	
 
 
