@@ -9,7 +9,7 @@ public class RangeTest {
     // Setup and cleanup for each test
     @Before
     public void setUp() throws Exception { 
-    	exampleRange = new Range[8];
+    	exampleRange = new Range[9];
     	
     	// Negative with combinations
     	exampleRange[0] = new Range(-2,-1);
@@ -23,7 +23,8 @@ public class RangeTest {
     	// Positive combinations
     	exampleRange[5] = new Range(1,1);
     	exampleRange[6] = new Range(1,2);
-    	exampleRange[7] = new Range(-2, 2);    	
+    	exampleRange[7] = new Range(-2, 2);  
+	exampleRange[8] = new Range(-100000000, 100000000);
     }
     @After
     public void tearDown() {
@@ -258,5 +259,33 @@ public class RangeTest {
     	double expected = 4;
     	double actual = exampleRange[7].getLength();
     	assertEquals("Checking the length for a negative and positive numbers.", expected, actual, .000000001d);
+    }
+	@Test
+    public void containsStandardValues() {
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[7].contains(0);
+    	assertTrue("contains is not returning the correct value for a basic functionality", expectedValue == actualValue);
+    }
+    
+    @Test
+    public void containsNegativeValues() {
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[0].contains(0);
+    	assertFalse("contains is not returning the correct value for the basic functionality", expectedValue == actualValue);
+    }
+    
+    @Test
+    public void containsSmallRange() {
+    	//These are same values but they are different in terms of the fact that they are negative numbers instead
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[3].contains(0);
+    	assertTrue("contains is not returning a value where when range is one number", expectedValue == actualValue);
+    }
+    
+    @Test
+    public void containsHugeRange() {
+    	boolean expectedValue = true;
+    	boolean actualValue = exampleRange[8].contains(0);
+    	assertTrue("contains is not returning a value where wne range is one number", expectedValue = actualValue);
     }
 }
