@@ -431,222 +431,6 @@ public class DataUtilitiesTest extends DataUtilities {
 	}
 
 	// Test Cases for: createNumberArray()
-		@Test
-		public void createNumberArray_SingleRowMultipleColumnsWithMocking() {
-		    // Arrange
-		    mockingContext.checking(new Expectations() {
-		    	{
-		        one(values).getRowCount();
-		        will(returnValue(1));
-		        one(values).getColumnCount();
-		        will(returnValue(3));
-		        allowing(values).getValue(0, 0);
-		        will(returnValue(1.0));
-		        allowing(values).getValue(0, 1);
-		        will(returnValue(2.0));
-		        allowing(values).getValue(0, 2);
-		        will(returnValue(3.0));
-		    }
-		});
-
-		    
-		    double[] data = new double[] {
-			        (double) values.getValue(0, 0),
-			        (double) values.getValue(0, 1),
-			        (double) values.getValue(0, 2),
-		    };
-
-		    // Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-		    // Assert
-		    Number[] expected = new Number[] {1.0, 2.0, 3.0};
-		    assertArrayEquals(expected, result);
-		}
-	    @Test
-	    public void createNumberArray_MultipleRowsSingleColumnWithMocking() {
-	        // Arrange
-	        mockingContext.checking(new Expectations() {
-	        	{
-	            one(values).getRowCount();
-	            will(returnValue(2));
-	            one(values).getColumnCount();
-	            will(returnValue(1));
-	            one(values).getValue(0, 0);
-	            will(returnValue(1.0));
-	            one(values).getValue(1, 0);
-	            will(returnValue(2.0));
-	        }
-	        	});
-
-	        
-		    double[] data = new double[] {
-			        (double) values.getValue(0, 0),
-			        (double) values.getValue(1, 0),
-
-			};
-
-		    // Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-		    // Assert
-		    Number[] expected = new Number[] {1.0, 2.0};
-		    assertArrayEquals(expected, result);
-		}
-	    
-		@Test
-		public void createNumberArray_SingleRowSingleColumnNegativeNumbersWithMocking() {
-		    // Arrange
-		    mockingContext.checking(new Expectations() {
-		    {
-		        one(values).getRowCount();
-		        will(returnValue(1));
-		        one(values).getColumnCount();
-		        will(returnValue(1));
-		        one(values).getValue(0, 0);
-		        will(returnValue(-1.0));
-		    }});
-
-		    double[] data = new double[] {
-		    		(double) values.getValue(0, 0)
-		 };
-
-		 // Act
-		 Number[] result = DataUtilities.createNumberArray(data);
-
-		 // Assert
-		 Number[] expected = new Number[] {-1.0};
-		 assertArrayEquals(expected, result);
-		}
-		
-		@Test
-		public void createNumberArray_SingleRowMultipleColumnsNegativeNumbersWithMocking() {
-		    // Arrange
-		    mockingContext.checking(new Expectations() {
-		    {
-		        one(values).getRowCount();
-		        will(returnValue(1));
-		        one(values).getColumnCount();
-		        will(returnValue(3));
-		        allowing(values).getValue(0, 0);
-		        will(returnValue(-1.0));
-		        allowing(values).getValue(0, 1);
-		        will(returnValue(-2.0));
-		        allowing(values).getValue(0, 2);
-		        will(returnValue(-3.0));
-		    }});
-		    
-		    double[] data = new double[] {
-			        (double) values.getValue(0, 0),
-			        (double) values.getValue(0, 1),
-			        (double) values.getValue(0, 2)
-			    };
-
-		    // Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-		    // Assert
-		    Number[] expected = new Number[] {-1.0, -2.0, -3.0};
-		    assertArrayEquals(expected, result);
-		}
-	    
-	
-	    @Test
-	    public void createNumberArray_MultipleRowsSingleColumnNegativeNumbersWithMocking() {
-	        // Arrange
-	        mockingContext.checking(new Expectations() {
-	        {
-	            one(values).getRowCount();
-	            will(returnValue(2));
-	            one(values).getColumnCount();
-	            will(returnValue(1));
-	            one(values).getValue(0, 0);
-	            will(returnValue(-1.0));
-	            one(values).getValue(1, 0);
-	            will(returnValue(-2.0));
-	        }});
-
-		    double[] data = new double[] {
-			        (double) values.getValue(0, 0),
-			        (double) values.getValue(1, 0)
-			};
-
-			// Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-		    // Assert
-		    Number[] expected = new Number[] {-1.0, -2.0};
-		    assertArrayEquals(expected, result);
-		}
-		@Test
-		public void createNumberArray_NegativesPositiveZerosWithMocking() {
-		    // Arrange
-		    mockingContext.checking(new Expectations() {
-		    {
-		        one(values).getRowCount();
-		        will(returnValue(1));
-		        one(values).getColumnCount();
-		        will(returnValue(4));
-		        allowing(values).getValue(0, 0);
-		        will(returnValue(-1.0));
-		        allowing(values).getValue(0, 1);
-		        will(returnValue(0.0));
-		        allowing(values).getValue(0, 2);
-		        will(returnValue(2.0));
-		        allowing(values).getValue(0, 3);
-		        will(returnValue(-3.0));
-		    }});
-
-		    
-		    double[] data = new double[] {
-			        (double) values.getValue(0, 0),
-			        (double) values.getValue(0, 1),
-			        (double) values.getValue(0, 2),
-			        (double) values.getValue(0, 3)
-			};
-
-			// Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-
-		    // Assert
-		    Number[] expected = new Number[] {-1.0, 0.0, 2.0, -3.0};
-		    assertArrayEquals(expected, result);
-		}
-		@Test
-		public void createNumberArray_AllZerosWithMocking() {
-		    // Arrange
-		    mockingContext.checking(new Expectations() {
-		    {
-		        one(values).getRowCount();
-		        will(returnValue(2));
-		        one(values).getColumnCount();
-		        will(returnValue(2));
-		        allowing(values).getValue(0, 0);
-		        will(returnValue(0.0));
-		        allowing(values).getValue(0, 1);
-		        will(returnValue(0.0));
-		        allowing(values).getValue(1, 0);
-		        will(returnValue(0.0));
-		        allowing(values).getValue(1, 1);
-		        will(returnValue(0.0));
-		    }});
-
-		    double[] data = new double[] {
-		        (double) values.getValue(0, 0),
-		        (double) values.getValue(0, 1),
-		        (double) values.getValue(1, 0),
-		        (double) values.getValue(1, 1)
-		    };
-
-		    // Act
-		    Number[] result = DataUtilities.createNumberArray(data);
-
-		    // Assert
-		    Number[] expected = new Number[] {0.0, 0.0, 0.0, 0.0};
-		    assertArrayEquals(expected, result);
-		}
-		
 	    @Test
 	    public void createNumberArrayPositive() {
 	        double[] data = new double[] {1.0, 2.0, 3.0};
@@ -686,4 +470,196 @@ public class DataUtilitiesTest extends DataUtilities {
 	        Number[] expectedResult = new Number[] {};
 	        assertArrayEquals(expectedResult, result);
 	    }
+	    @Test
+	    public void createNumberArrayPositiveNumbers() {
+	    	mockingContext.checking(new Expectations() {
+	    	{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	    		oneOf(values).getValue(0, 0); 
+	    		will(returnValue(1.0));
+	    		oneOf(values).getValue(1, 0); 
+	    		will(returnValue(2.0));
+	    		oneOf(values).getValue(2, 0); 
+	    		will(returnValue(3.0));
+	    		oneOf(values).getValue(3, 0); 
+	    		will(returnValue(4.0));
+	    		oneOf(values).getValue(4, 0); 
+	    		will(returnValue(5.0));
+	    	}
+	    });
+
+		    double[] data = new double[] {
+			        (double) values.getValue(0, 0),
+			        (double) values.getValue(1, 0),
+			        (double) values.getValue(2, 0),
+			        (double) values.getValue(3, 0),
+			        (double) values.getValue(4, 0)
+			    };
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {1.0, 2.0, 3.0, 4.0, 5.0};
+			    assertArrayEquals(expected, result);
+	    }
+	    @Test
+	    public void createNumberArrayNegativeNumbers() {
+	    	mockingContext.checking(new Expectations() {
+	    	{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	    		oneOf(values).getValue(0, 0); 
+	    		will(returnValue(-1.0));
+	    		oneOf(values).getValue(1, 0); 
+	    		will(returnValue(-2.0));
+	    		oneOf(values).getValue(2, 0); 
+	    		will(returnValue(-3.0));
+	    		oneOf(values).getValue(3, 0); 
+	    		will(returnValue(-4.0));
+	    		oneOf(values).getValue(4, 0); 
+	    		will(returnValue(-5.0));
+	    	}
+	    });
+
+		    double[] data = new double[] {
+			        (double) values.getValue(0, 0),
+			        (double) values.getValue(1, 0),
+			        (double) values.getValue(2, 0),
+			        (double) values.getValue(3, 0),
+			        (double) values.getValue(4, 0)
+			    };
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {-1.0, -2.0, -3.0, -4.0, -5.0};
+			    assertArrayEquals(expected, result);
+	    }
+	    
+	    @Test
+	    public void createNumberArrayMixedNumbers() {
+	    	mockingContext.checking(new Expectations() {
+	    	{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	    		oneOf(values).getValue(0, 0); 
+	    		will(returnValue(-1.0));
+	    		oneOf(values).getValue(1, 0); 
+	    		will(returnValue(2.0));
+	    		oneOf(values).getValue(2, 0); 
+	    		will(returnValue(-3.0));
+	    		oneOf(values).getValue(3, 0); 
+	    		will(returnValue(4.0));
+	    		oneOf(values).getValue(4, 0); 
+	    		will(returnValue(-5.0));
+	    	}
+	    });
+
+		    double[] data = new double[] {
+			        (double) values.getValue(0, 0),
+			        (double) values.getValue(1, 0),
+			        (double) values.getValue(2, 0),
+			        (double) values.getValue(3, 0),
+			        (double) values.getValue(4, 0)
+			    };
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {-1.0, 2.0, -3.0, 4.0, -5.0};
+			    assertArrayEquals(expected, result);
+	    }
+	    @Test
+	    public void createNumberArrayMixedNumbersAndZero() {
+	    	mockingContext.checking(new Expectations() {
+	    	{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	    		oneOf(values).getValue(0, 0); 
+	    		will(returnValue(-1.0));
+	    		oneOf(values).getValue(1, 0); 
+	    		will(returnValue(2.0));
+	    		oneOf(values).getValue(2, 0); 
+	    		will(returnValue(-3.0));
+	    		oneOf(values).getValue(3, 0); 
+	    		will(returnValue(4.0));
+	    		oneOf(values).getValue(4, 0); 
+	    		will(returnValue(0.0));
+	    	}
+	    });
+
+		    double[] data = new double[] {
+			        (double) values.getValue(0, 0),
+			        (double) values.getValue(1, 0),
+			        (double) values.getValue(2, 0),
+			        (double) values.getValue(3, 0),
+			        (double) values.getValue(4, 0)
+			    };
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {-1.0, 2.0, -3.0, 4.0, 0.0};
+			    assertArrayEquals(expected, result);
+	    }
+	    
+	    @Test
+	    public void createNumberArrayZeroes() {
+	    	mockingContext.checking(new Expectations() {
+	    	{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	    		oneOf(values).getValue(0, 0); 
+	    		will(returnValue(0.0));
+	    		oneOf(values).getValue(1, 0); 
+	    		will(returnValue(0.0));
+	    		oneOf(values).getValue(2, 0); 
+	    		will(returnValue(0.0));
+	    		oneOf(values).getValue(3, 0); 
+	    		will(returnValue(0.0));
+	    		oneOf(values).getValue(4, 0); 
+	    		will(returnValue(0.0));
+	    	}
+	    });
+
+		    double[] data = new double[] {
+			        (double) values.getValue(0, 0),
+			        (double) values.getValue(1, 0),
+			        (double) values.getValue(2, 0),
+			        (double) values.getValue(3, 0),
+			        (double) values.getValue(4, 0)
+			    };
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {0.0,0.0,0.0,0.0,0.0};
+			    assertArrayEquals(expected, result);
+	    }
+	    
+	    @Test
+	    public void createNumberArrayEmptyArray() {
+	    	mockingContext.checking(new Expectations() {{
+	    		oneOf(values).getRowCount(); 
+	    		will(returnValue(5));
+	   
+	    	}
+	    });
+
+		    double[] data = new double[] {};
+
+			    // Act
+			    Number[] result = DataUtilities.createNumberArray(data);
+
+			    // Assert
+			    Number[] expected = new Number[] {};
+			    assertArrayEquals(expected, result);
+	    }
+}
 }
