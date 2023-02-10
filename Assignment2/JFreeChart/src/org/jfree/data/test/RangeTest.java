@@ -199,7 +199,7 @@ public class RangeTest {
     public void stringWithNegAndPos() {
     	assertEquals(
         		"Make sure the range for a negative and positive number is represented correctly",
-        		"Range[1.0,2.0]",
+        		"Range[-2.0,2.0]",
         		exampleRange[7].toString());
     }  
     
