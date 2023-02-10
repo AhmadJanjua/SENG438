@@ -24,6 +24,7 @@ public class DataUtilitiesTest extends DataUtilities {
 	public void setUp() throws Exception {
 		mockingContext = new Mockery();
 		values = mockingContext.mock(Values2D.class);
+		keyValues = mockingContext.mock(KeyedValues.class);
 	}
 	@After
     public void tearDown() throws Exception {
@@ -133,7 +134,6 @@ public class DataUtilitiesTest extends DataUtilities {
 				will(returnValue("1"));
 	        }
 	    });
-
 	    try {
 	        DataUtilities.getCumulativePercentages(keyValues);
 	        fail("The InvalidParameterException was not thrown.");
