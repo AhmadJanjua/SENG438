@@ -4,7 +4,7 @@ import static org.junit.Assert.*; import org.jfree.data.Range; import org.junit.
 
 public class RangeTest {
     private Range range;
-
+    private Range exampleRange;
     @BeforeClass public static void setUpBeforeClass() throws Exception {
     }
 
@@ -52,6 +52,18 @@ public class RangeTest {
     @After
     public void tearDown() throws Exception {
     	range = null;
+    public void setUp() throws Exception { exampleRange = new Range(-1, 1);
+    }
+
+
+    @Test
+    public void centralValueShouldBeZero() {
+        assertEquals("The central value of -1 and 1 should be 0",
+        0, exampleRange.getCentralValue(), .000000001d);
+    }
+
+    @After
+    public void tearDown() throws Exception {
     }
 
     @AfterClass

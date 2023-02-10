@@ -2,6 +2,7 @@ package org.jfree.data.test;
 
 import static org.junit.Assert.*;
 
+
 import java.security.InvalidParameterException;
 
 import org.jmock.Expectations;
@@ -26,8 +27,9 @@ public class DataUtilitiesTest extends DataUtilities {
 		values = mockingContext.mock(Values2D.class);
 	}
 	
-	
+
 	/////TEST CASES FOR calculateColumnTotal
+
 	@Test
 	public void calculateColumnTotalForTwoValues() {
 		mockingContext.checking(new Expectations() {
@@ -181,6 +183,19 @@ public class DataUtilitiesTest extends DataUtilities {
 	    double expected = 0.0;
 	    assertEquals(expected, actual, .000000001d);
 	    //fail();
+	            //one(values).getRowCount();
+	        	//will(returnValue(2));
+	            one(values).getColumnCount();
+	        	will(returnValue(1));
+	            one(values).getValue(0, 0);
+	            will(returnValue(7.5));
+	            one(values).getValue(1, 0);
+	            will(returnValue(2.5));
+	        }
+	    });
+	    double actual = DataUtilities.calculateColumnTotal(values, 0);
+	    double expected = 10.0;
+	    assertEquals(actual, expected, .000000001d);
 	}
 	
 	@After
@@ -189,7 +204,7 @@ public class DataUtilitiesTest extends DataUtilities {
 		values = null;
 	}
 	
-	
+
     @AfterClass
     public static void tearDownAfterClass() throws Exception {}
 }
