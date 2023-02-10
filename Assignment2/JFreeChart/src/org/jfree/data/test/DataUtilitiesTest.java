@@ -296,6 +296,40 @@ public class DataUtilitiesTest extends DataUtilities {
 	    double expected = 0.0;
 	    assertEquals(expected, actual, .000000001d);
 	}
+	
+	@Test
+	public void createPositive2DArray() {
+		Number [][] expectedValue = {{1.0,2.0,3.0},{3.0,2.0,1.0}};
+		double [][] doubleArray = {{1.0,2.0,3.0},{3.0,2.0,1.0}};
+		Number[][] actualValue = DataUtilities.createNumberArray2D(doubleArray);
+		assertArrayEquals("The createNumberArray2d did not create the number array correctly.", expectedValue, actualValue);
+	}
+	
+	@Test
+	public void createNegative2DArray() {
+		Number [][] expectedValue = {{-1.0,-2.0,-3.0},{-3.0,-2.0,-1.0}};
+		double [][] doubleArray = {{-1.0,-2.0,-3.0},{-3.0,-2.0,-1.0}};
+		Number[][] actualValue = DataUtilities.createNumberArray2D(doubleArray);
+		assertArrayEquals("The createNumberArray2d did not create the negativity number array correctly.", expectedValue, actualValue);
+	}
+	
+	@Test
+	public void createUneven2DArray() {
+		Number [][] expectedValue = {{10.0, 2.0, 1.0, 10.0},{3.0}};
+		double [][] doubleArray = {{10.0, 2.0, 1.0, 10.0},{3.0}};
+		Number [][] actualValue = DataUtilities.createNumberArray2D(doubleArray);
+		assertArrayEquals("The createNumberArray2d did not create an uneven array.", expectedValue, actualValue);
+	}
+	
+	
+	@Test
+	public void createEmpty2dArray() {
+		Number [][] expectedValue = {{},{}};
+		double [][] doubleArray = {{},{}};
+		Number [][] actualValue = DataUtilities.createNumberArray2D(doubleArray);
+		assertArrayEquals("The createNumberArray2d did not create the empty number array correctly.", expectedValue, actualValue);
+	}
+
 
 	
 
