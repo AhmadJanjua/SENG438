@@ -155,6 +155,9 @@ public class DataUtilitiesTest extends DataUtilities {
 	    catch(Exception e) {}
 	}
 	
+	
+	
+	
 // TEST CASES FOR: calculateColumnTotal
 	@Test
 	public void calculateColumnTotalForTwoValues() {
@@ -219,25 +222,19 @@ public class DataUtilitiesTest extends DataUtilities {
 	    fail();
 	}
 	
-	//Unsure how to get this to work
-	//Trying to test giving it a invalid data object to test the exception
-	/*@Test(expected = InvalidParameterException.class)
-	public void calculateColumnTotalForInvalidData() {
-		mockingContext.checking(new Expectations() {
-	        {
-	        	never(values).getRowCount();
-	        	will(returnValue(0));
-	        	//one(values).getColumnCount();
-	        	//will(returnValue(1));
-	            //one(values).getValue(0, 0);
-	            //will(returnValue(10000000000));
-	            //will(throwException(new InvalidParameterException())); 
-	        }
-	    });
-		int column = 0;
-		DataUtilities.calculateColumnTotal(values, column);
-		fail();
-	}*/
+	
+	@Test ( expected = InvalidParameterException.class)
+	public void calculateColumnTotalForNULLObject() {
+	    try {
+	        DataUtilities.calculateColumnTotal(null, 0);
+	        fail("The InvalidParameterException was not thrown.");
+	    } catch (InvalidParameterException e) {
+	        return;
+	    }
+	    catch(Exception e) {}
+	}
+	
+
 	
 // TEST CASES FOR: calculateRowTotal
 	@Test
