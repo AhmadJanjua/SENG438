@@ -30,7 +30,7 @@ In this lab, we were tasked with creating and implementing test cases based off 
 
 # Detailed description of unit test strategy
 
-// including the input partitions you have designed
+Our main strategy used for unit testing was the black box testing method. In black box testing the idea is that the inner workings are hidden from us and that it is our job to explore and learn a lot of the functionality of this software by running test cases. To do this, we first needed to understand how the Range and DataUtilities classes operated and how the methods within these classes played a role in the overall testing. Once we were able to establish this, then we could move onto deciding which methods we wanted to test out of the total methods found in each of the classes we were evaluating. We then applied some black box testing methods and created specific strategies for each of the tests such as how we used boundary checking for many of the ranged class methods.
 
 # Test cases developed
 
