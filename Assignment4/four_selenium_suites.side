@@ -1,0 +1,2095 @@
+{
+  "id": "e25890fa-125c-405e-90c7-cbf78bbe3e46",
+  "version": "2.0",
+  "name": "Assignment4",
+  "url": "https://www.ikea.com/ca/en/",
+  "tests": [{
+    "id": "ece1e532-e3f6-4cdc-b681-8eb4d44483dc",
+    "name": "search_article_quickselect",
+    "commands": [{
+      "id": "197ed42a-106e-4157-bf78-78851fa346bb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88f4545a-73ae-4399-a37c-a1cfb4d4b392",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3991f81f-c5de-4f6d-83f0-cdbe186694a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d46ab58-b22c-440f-a5be-f625ca226bf2",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "micke"
+    }, {
+      "id": "a50d90df-da5c-4349-9280-68d80bb8a87a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.universal-item:nth-child(5) .universal-item__title",
+      "targets": [
+        ["css=.universal-item:nth-child(5) .universal-item__title", "css:finder"],
+        ["xpath=//ol[@id='search-suggestions']/li[5]/a/div/p", "xpath:idRelative"],
+        ["xpath=//li[5]/a/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60b8e133-9994-4af9-9dbe-3e8f39d898ea",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f207e70-93ca-4042-8c6b-75d1f10cbfbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.universal-item__thumbnail",
+      "targets": [
+        ["css=.universal-item__thumbnail", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/ca/en/images/products/micke-desk-white__0736018_pe740345_s5.jpg?f=u')]", "xpath:img"],
+        ["xpath=//ol[@id='search-suggestions']/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad547427-2176-46a6-9a73-875765871ccf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.pip-header-section__title--big",
+      "targets": [
+        ["css=.pip-header-section__title--big", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div/div/div/h1/div/div/span", "xpath:idRelative"],
+        ["xpath=//h1/div/div/span", "xpath:position"]
+      ],
+      "value": "MICKE"
+    }, {
+      "id": "13eea129-5705-4f86-b896-bca862bf9e15",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8be6e456-c73f-4f1f-a3f3-7285ad542f25",
+    "name": "search_name",
+    "commands": [{
+      "id": "196b7007-2658-4990-b11b-fcbf999e16e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "234be9db-9833-431d-9d76-9c5f861e1dfc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60bcc5c8-9c8e-4e5e-a4f7-174c0ee2bf39",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec2717eb-04c6-4c59-9b5e-bf9c7bee0c46",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "micke"
+    }, {
+      "id": "41ef6121-2324-4473-a227-548d02a6a558",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90940cc2-adbb-402f-a368-0a10e69f5cbf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.search-summary__heading",
+      "targets": [
+        ["css=.search-summary__heading", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Showing matches for \"micke\"')]", "xpath:innerText"]
+      ],
+      "value": "Showing matches for \"micke\""
+    }, {
+      "id": "5ed922e3-cd65-4e66-9da8-2813b6655fb8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "edf3d459-dbc1-49bb-bc05-ff85e6fc579d",
+    "name": "search_not_exist",
+    "commands": [{
+      "id": "a6b33edd-3412-47d3-a534-27602fe0e32b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f37b12a7-af2f-4f2e-82ef-9aabe19f84c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cf16c3c-98d8-4671-9fd3-2de18aeb2065",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "831748f3-cbed-45cd-9cb8-3fde1c27cdb7",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "c37e545ceirv8obbb768po5 s8b58w35v4v"
+    }, {
+      "id": "5769e7c1-81cf-43a9-96a7-abd770d447dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2099ab9e-d267-4ef3-9300-bdc788482919",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.search-summary__heading",
+      "targets": [
+        ["css=.search-summary__heading", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'There are no results for \"c37e545ceirv8obbb768po5 s8b58w35v4v\"')]", "xpath:innerText"]
+      ],
+      "value": "There are no results for \"c37e545ceirv8obbb768po5 s8b58w35v4v\""
+    }, {
+      "id": "dc550bac-de52-4eb5-9e70-ef16c8a8bc59",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "695054e1-2d11-4426-bc0e-4c55d136c37c",
+    "name": "search_description",
+    "commands": [{
+      "id": "f23ff84c-95a2-486a-91d7-a3c5c7d02a93",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb9e7d16-af4f-4483-b9f9-08c09e876682",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea943152-bdd1-4e9c-ba3d-578c298cb5c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1bd5486-985a-40f6-a80b-f7af23ea4a4a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50d1b2f9-60c1-4b30-9a0b-683cd29616ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "A clean and simple look that fits just about anywhere. You can combine it with other desks or drawer units in the MICKE series to extend your work spa"
+    }, {
+      "id": "76ae41b8-4b4a-4dcd-a62e-ca6661befcf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5ac3ee1-ec7b-44ef-bfd8-059d0d20f5b1",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.search-summary__heading",
+      "targets": [
+        ["css=.search-summary__heading", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'There are no results for \"A clean and simple look that fits just about anywhere. You can combine it with other desks or drawer units in the MICKE series to extend your work spa\"')]", "xpath:innerText"]
+      ],
+      "value": "There are no results for \"A clean and simple look that fits just about anywhere. You can combine it with other desks or drawer units in the MICKE series to extend your work spa\""
+    }, {
+      "id": "b5ab704a-fa88-4b47-b201-3558a642b9b8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "450c9e45-6df7-440f-81a3-bfe940046f6f",
+    "name": "search_clear_history_clear",
+    "commands": [{
+      "id": "62fae5cc-a5d4-4142-9019-732d4ea12e34",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e608e9d-e0cf-47fe-9f14-b40e70296904",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a898cd7-9719-4ef4-808a-ed344144290c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e49437-41ea-49e1-83b3-7d57154b9b8a",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Search history"
+    }, {
+      "id": "4ff1fd56-ee3c-4ae3-bb16-dfac0d3e4cca",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b120e40-b51d-4e20-ad12-1533825df31f",
+      "comment": "",
+      "command": "click",
+      "target": "id=clear-input",
+      "targets": [
+        ["id=clear-input", "id"],
+        ["css=#clear-input", "css:finder"],
+        ["xpath=//button[@id='clear-input']", "xpath:attributes"],
+        ["xpath=//span/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65ee0644-3a4b-47d5-a0b7-df9ffe7ed172",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dba3057d-a0fd-4ebb-8be4-d813f013e05c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Clear",
+      "targets": [
+        ["linkText=Clear", "linkText"],
+        ["css=.search-results__clear", "css:finder"],
+        ["xpath=//a[contains(text(),'Clear')]", "xpath:link"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59e8058-e6ab-465a-814b-21fbdbaad1d3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "374ab37d-1bd8-4208-a7e5-070695fae796",
+    "name": "search_type",
+    "commands": [{
+      "id": "871e973a-82fd-4ea6-988c-1ca0b5ec36e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "156e5b4a-b8a4-457d-8947-e741012bec62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "064bfe10-ed53-4fbc-a6ca-2c8e24fd7fb8",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96c15cca-5141-422f-8ee8-8d853b144630",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "desk"
+    }, {
+      "id": "0db62182-ce55-41d1-8f9e-0e6c86e729fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29efecba-ee58-4ccf-9824-626c4a97ce00",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.search-summary__heading",
+      "targets": [
+        ["css=.search-summary__heading", "css:finder"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Showing matches for \"desk\"')]", "xpath:innerText"]
+      ],
+      "value": "Showing matches for \"desk\""
+    }, {
+      "id": "5df338b8-a8ae-47e1-a5fe-c628bbc5a769",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9dc0fa71-6989-44d1-a587-1161c3783382",
+    "name": "search_blank",
+    "commands": [{
+      "id": "cedd4180-0cca-4e22-8136-cc405a69d926",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03ba25cf-e83b-4155-9037-07c56d9cc4ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2ae1175-1463-4279-9b72-85046d0e5f1c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae86716-a904-4cb1-bf1e-0aca9bf75c4c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9bb5e40a-7657-4b9b-9b7b-80d6514fdda5",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03521240-4d4f-4abb-b0a0-503f9f57ed61",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fce52998-6b21-4e75-ada0-f8792d2daf98",
+    "name": "search_clear_history_no_clear",
+    "commands": [{
+      "id": "d68c481b-735a-4860-ba46-2aa349a7b3d5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e44e543-033c-47db-9628-d29e7d5d286f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ded6b783-af21-4448-8da9-132c5ffe74d7",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "581ebbe3-817a-4ea4-a31e-8ab5b7fed1a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Search history"
+    }, {
+      "id": "abb4607f-53d2-4295-a93b-7a2376e4b287",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d9acf4-3bdc-4c76-977a-7b258a0b8248",
+      "comment": "",
+      "command": "click",
+      "target": "id=clear-input",
+      "targets": [
+        ["id=clear-input", "id"],
+        ["css=#clear-input", "css:finder"],
+        ["xpath=//button[@id='clear-input']", "xpath:attributes"],
+        ["xpath=//span/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ba90da9-0965-48a2-b558-f3776548846e",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5216b4-8dec-4b6a-8664-6ddc4e31abce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clear",
+      "targets": [
+        ["linkText=Clear", "linkText"],
+        ["css=.search-results__clear", "css:finder"],
+        ["xpath=//a[contains(text(),'Clear')]", "xpath:link"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1f21564-4712-4b57-991c-0bc993fa373d",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "linkText=Clear",
+      "targets": [
+        ["linkText=Clear", "linkText"],
+        ["css=.search-results__clear", "css:finder"],
+        ["xpath=//a[contains(text(),'Clear')]", "xpath:link"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62c77ded-5694-4ee2-bf9e-6e007f2a3cd3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c37314c5-5a26-4eb5-a8c4-3d9b946ef856",
+    "name": "search_article_num",
+    "commands": [{
+      "id": "4c91199d-7e2a-4039-85c3-c6379a22452a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1541df69-de09-4b54-aae4-0992ac76c879",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a003948b-d33f-44fb-aa67-56ce5b3a0d6b",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d7a940-b6b8-44bc-9605-f3dc3975580b",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "302.130.76"
+    }, {
+      "id": "dba327bc-ff1d-4d97-ad66-0bba823c6ffd",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9878942d-de80-4925-96a3-85e07cef748b",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=1 product",
+      "targets": [
+        ["linkText=1 product", "linkText"],
+        ["css=span > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'1 product')]", "xpath:link"],
+        ["xpath=//main[@id='content']/div/div/div/section/div/p/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#product-list')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1 product')]", "xpath:innerText"]
+      ],
+      "value": "1 product"
+    }, {
+      "id": "910b8470-c7ad-4d44-84eb-894188e7429f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "79c7e2ef-9b91-4991-9f6e-39b0cab6b9af",
+    "name": "location_invalid",
+    "commands": [{
+      "id": "c39e2dae-c4a3-4f60-ab6d-d54e2f4633e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81dc673d-992e-4634-b569-b92872360ef3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b352b055-7479-4d3c-8d56-eaf1b55ac2fa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-header__shopping-list-link .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__shopping-list-link .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e86b149d-4859-4119-abe6-894f125c0ba1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store .hnf-btn__label",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store .hnf-btn__label", "css:finder"],
+        ["xpath=//li[@id='hnf-header-storepicker']/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c39c982-3c9c-489d-9d74-0675d7494b13",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-switch-store > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-storepicker-switch-store > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-switch-store']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Select a different store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16117782-ab5a-4e29-ab75-9d7855024868",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "123456789sfsd"
+    }, {
+      "id": "afd32a1d-dd74-46a3-9dbc-676abdad9ecb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-method-postcode > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-storepicker-method-postcode > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-method-postcode']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Find a preferred store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec0af484-3314-4945-8001-eade7237bc11",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.hnf-form-field__message:nth-child(2)",
+      "targets": [
+        ["css=.hnf-form-field__message:nth-child(2)", "css:finder"],
+        ["xpath=//span[@id='hnf-txt-storepicker-postcode-invalid']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": "The postal code you entered is not valid. Please try again."
+    }, {
+      "id": "3b16ea3f-8812-48b5-b3fa-59040e670c49",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ba63e521-f86f-496a-b900-14ecf0d5f41f",
+    "name": "location_store",
+    "commands": [{
+      "id": "1a3de967-6529-4cb7-9b96-df06aeb6f56d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f975bf60-ec64-4deb-a066-8b19848f223d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "426cf5d3-77e9-4b91-af9f-5eb5ddd9aed1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c7f9f2c-ee0c-44a9-9163-fd3df1e41063",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__label", "css:finder"],
+        ["xpath=//div[2]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb53f02-d0ec-4d40-b96f-79c372c28cbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-switch-store .hnf-btn__label",
+      "targets": [
+        ["css=#hnf-btn-storepicker-switch-store .hnf-btn__label", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-switch-store']/span/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "823baa2f-da90-4f23-b2fd-d177c6f77ee5",
+      "comment": "",
+      "command": "click",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f5c4b43-3387-4ae1-850c-3d7d329134e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "T2H 3B2"
+    }, {
+      "id": "47386335-7700-41c1-984d-49bad8dc2446",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-method-postcode .hnf-btn__label",
+      "targets": [
+        ["css=#hnf-btn-storepicker-method-postcode .hnf-btn__label", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-method-postcode']/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7aef0bb-d5f0-4c1a-92bc-adf7d1877b4d",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=hnf-storepicker-result-store-name",
+      "targets": [
+        ["id=hnf-storepicker-result-store-name", "id"],
+        ["css=#hnf-storepicker-result-store-name", "css:finder"],
+        ["xpath=//h2[@id='hnf-storepicker-result-store-name']", "xpath:attributes"],
+        ["xpath=//aside[@id='hnf-storepicker']/div[2]/div[2]/div/div[4]/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'IKEA Calgary')]", "xpath:innerText"]
+      ],
+      "value": "IKEA Calgary"
+    }, {
+      "id": "6f411df4-d8c0-46fd-9a93-39a9ccc34e6c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "01da62bb-61e8-4317-b81c-9f6484f7256e",
+    "name": "location_usa",
+    "commands": [{
+      "id": "3276f14f-c0f6-4c66-9ff9-5da42010137a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61a27fba-af87-4fca-a856-9c3865295f4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f6338ad-9c4c-41b0-9fb2-f566ce87fb9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store > .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[@id='hnf-header-storepicker']/div/button/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Calgary')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf7d634c-0d31-485c-88a7-ec9ceb442a02",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-switch-store .hnf-btn__label",
+      "targets": [
+        ["css=#hnf-btn-storepicker-switch-store .hnf-btn__label", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-switch-store']/span/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c4b1bdc-01fc-4742-9f3a-3a65d481bf3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "535c853f-be9c-488a-ae5e-ec749c913f66",
+      "comment": "",
+      "command": "click",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f9e50ac-4b9e-40e0-9412-91ca921a16a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "812ae856-1b7c-47be-bac9-ea4aed9dbebf",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "11801"
+    }, {
+      "id": "83e9df3a-e80e-4f0d-9fe2-dbed27db6b86",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-method-postcode .hnf-btn__label",
+      "targets": [
+        ["css=#hnf-btn-storepicker-method-postcode .hnf-btn__label", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-method-postcode']/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4600144f-5e36-4e45-985c-2553b119327d",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.hnf-form-field__message:nth-child(2)",
+      "targets": [
+        ["css=.hnf-form-field__message:nth-child(2)", "css:finder"],
+        ["xpath=//span[@id='hnf-txt-storepicker-postcode-invalid']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/span[2]", "xpath:position"]
+      ],
+      "value": "The postal code you entered is not valid. Please try again."
+    }, {
+      "id": "e3fde168-104d-4ded-9490-7190a3ae0a2b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21479689-cec6-470f-b48a-1d3086d7ec5b",
+    "name": "location_valid",
+    "commands": [{
+      "id": "c1c9342e-46d0-47a5-9875-e70f011b210f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57bc4d3f-6b3b-43bf-8aa8-4fce65a299ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56132f37-0c80-4f8a-85d9-0cbf16bb0f6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store path",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(1) > .hnf-location__store path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc6f172b-d542-4703-92fd-703d977073b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-switch-store > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-storepicker-switch-store > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-switch-store']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Select a different store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c061c588-2c9e-4e27-9f4b-d6627fe7c089",
+      "comment": "",
+      "command": "type",
+      "target": "id=hnf-txt-storepicker-postcode",
+      "targets": [
+        ["id=hnf-txt-storepicker-postcode", "id"],
+        ["css=#hnf-txt-storepicker-postcode", "css:finder"],
+        ["xpath=//input[@id='hnf-txt-storepicker-postcode']", "xpath:attributes"],
+        ["xpath=//div[@id='storepicker-postalCode-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "T3G 5C1"
+    }, {
+      "id": "7b8811af-120c-42f1-9134-63968b282101",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-btn-storepicker-method-postcode > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-btn-storepicker-method-postcode > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-btn-storepicker-method-postcode']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Find a preferred store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5853d0c-26fe-4c54-9971-9608126bf05e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=hnf-storepicker-result-store-name",
+      "targets": [
+        ["id=hnf-storepicker-result-store-name", "id"],
+        ["css=#hnf-storepicker-result-store-name", "css:finder"],
+        ["xpath=//h2[@id='hnf-storepicker-result-store-name']", "xpath:attributes"],
+        ["xpath=//aside[@id='hnf-storepicker']/div[2]/div[2]/div/div[4]/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'IKEA Calgary')]", "xpath:innerText"]
+      ],
+      "value": "IKEA Calgary"
+    }, {
+      "id": "d2d2ace9-3967-42a4-be60-90ee06bc01cc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bd0a2c1b-1ce2-455f-bc1f-a0d3877a4399",
+    "name": "menu_close",
+    "commands": [{
+      "id": "af3c0d31-181c-436b-94a4-40705ccf5a07",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "411eb100-cce1-4a68-bf38-25a01e1271b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34e20b2d-403a-4233-9db4-71ec3fb369ec",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "620df537-6f2a-42ac-b6c0-2a32679ef361",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "653a3d7f-73ee-49dd-83d0-31411f09f3a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#hnf-menu-close-btn > .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-menu-close-btn > .hnf-btn__inner", "css:finder"],
+        ["xpath=//button[@id='hnf-menu-close-btn']/span", "xpath:idRelative"],
+        ["xpath=//aside/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ac33768-b198-4a2d-908a-76a565e37088",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dda4c2ca-e312-4199-a2fe-74b7f9b530a3",
+    "name": "menu_language",
+    "commands": [{
+      "id": "d06bdf07-3aee-4e74-b64d-c2d88452ce82",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f50feff2-5010-47d4-8bf0-f4b42f252c5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d77101-acf8-4acb-97ec-f8d20dc71667",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--open-menu > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--open-menu > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76a755b4-70fc-4be5-b9e2-4586d9887b15",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90bd3669-62cd-4f28-ab3c-3cfb0410ff39",
+      "comment": "",
+      "command": "click",
+      "target": "css=select",
+      "targets": [
+        ["css=select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de8a34cd-ad08-427c-93f3-140407b8dc69",
+      "comment": "",
+      "command": "select",
+      "target": "css=select",
+      "targets": [],
+      "value": "label=Français"
+    }, {
+      "id": "1ef6e1e8-ae36-4f78-ac53-e70faf7bf14a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "9c24e4c3-baed-47a2-a3d3-de133b67f31b",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://www.ikea.com/ca/fr/"
+    }, {
+      "id": "d0b858ae-172e-4465-bc96-2ac5600253ad",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e0cbc635-eea7-4eb7-b0f7-1ba7dd9876eb",
+    "name": "menu_location",
+    "commands": [{
+      "id": "0b5ee756-2b27-4097-b754-d74d15457759",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6949f3d0-52c6-46aa-b2b5-02d3e7ed630b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "760b4da5-0c41-482c-9d45-24e886190d11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed1899d-b80a-4428-b514-1c302a62c78c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e8334d4-288e-4383-a631-4f75c60c98d1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24007dd0-a72e-41ff-bcf6-c99bc7a3b312",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Find a location",
+      "targets": [
+        ["linkText=Find a location", "linkText"],
+        ["css=.hnf-menu__nav__aux > li:nth-child(3) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Find a location')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/stores/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Find a location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "243ed328-970c-409c-8a0d-880baef8d127",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "88e71482-d523-4849-a51e-c6cd7b1f37a0",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://www.ikea.com/ca/en/stores/"
+    }, {
+      "id": "9c298cdb-f659-40a7-bdaa-0d367366106f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "db764623-3f52-4056-bbd5-eea436e9f25f",
+    "name": "menu_login_page",
+    "commands": [{
+      "id": "4e123fb6-f5c7-4cec-a359-d12df964d105",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d22edb3-bfa7-4efc-a16e-06f50082e8bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90efd806-556c-479e-bd9c-d0b695743d7e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4b4e9f2-d83d-4c47-b5a2-f4a6f5c413c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b52ac6-d9d9-4405-a0aa-37d1a1a2946e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-btn--fluid > .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-btn--fluid > .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15e701bb-37ba-4dc0-92a2-4161a4cf54c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sc-htpNat > span",
+      "targets": [
+        ["css=.sc-htpNat > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/h1/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "31cc22a9-0970-4d89-8f5c-eb500bfa4a97",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc242ac1-fc7d-4871-83e3-c2fcbfab7e59",
+    "name": "menu_nested",
+    "commands": [{
+      "id": "9a17e36c-8266-46ae-9f9c-e59472dfabe8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37278c11-e95d-42cc-8c03-944e9bcc33d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4e091b5-590f-4166-bccf-bff21941d779",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hnf-header__hamburger .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-header__hamburger .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "148b37d9-a730-47a0-b858-6714025e1c83",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f76a1bc2-9a78-44c8-9401-65e202769f9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=.hnf-menu__nav__main > li:nth-child(1) > .hnf-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/cat/products-products/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0535565-e681-473f-91d2-0478be92a777",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=New products",
+      "targets": [
+        ["linkText=New products", "linkText"],
+        ["css=.hnf-menu__nav2__main > .hnf-menu--highlight:nth-child(1) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'New products')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/new/')])[2]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc8416a1-23bb-4ef7-882d-fc36ad03597e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=New products",
+      "targets": [
+        ["linkText=New products", "linkText"],
+        ["css=.hnf-menu__nav2__main > .hnf-menu--highlight:nth-child(1) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'New products')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/new/')])[2]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "499d9013-fb04-4566-891a-7e27ccde618a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "527fdc9e-1fae-4e59-ac60-376a55d1b7e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All furniture",
+      "targets": [
+        ["linkText=All furniture", "linkText"],
+        ["css=.hnf-menu__nav2:nth-child(2) > .hnf-menu__nav2__main > li:nth-child(6) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'All furniture')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/all-furniture-fu001/')]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All furniture')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b6af020-02fc-4b0f-b1f2-6a840a9cfdc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sofas",
+      "targets": [
+        ["linkText=Sofas", "linkText"],
+        ["css=li:nth-child(6) li:nth-child(2) > .hnf-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sofas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/cat/sofas-fu003/')]", "xpath:href"],
+        ["xpath=//li[6]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sofas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dd9c3a7-744b-4630-826f-78b6d26cea2c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Products",
+      "targets": [
+        ["linkText=Products", "linkText"],
+        ["css=.bc-breadcrumb__list-item:nth-child(1) > .bc-breadcrumb__link", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://www.ikea.com/ca/en/cat/products-products/')])[3]", "xpath:href"],
+        ["xpath=//ol/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63f61776-fade-47aa-becd-d89e1477f0e3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "0d12095d-8ade-4466-aea8-fd1629f14c29",
+      "comment": "",
+      "command": "assert",
+      "target": "pageurl",
+      "targets": [],
+      "value": "https://www.ikea.com/ca/en/cat/sofas-fu003/"
+    }, {
+      "id": "cecbca58-d157-43ac-bc9b-ed1299935f52",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d8fb5fc-26dc-40ea-9c01-61bc6023d2de",
+    "name": "cart_add",
+    "commands": [{
+      "id": "9cbcad8c-fab0-4317-8f46-bfd1a9f41472",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "228dedc4-fb97-43af-8a13-787113a7fc5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62df913a-c7ac-4ff1-a136-e1813f51bfb3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#hnf-header-profile .hnf-btn__inner",
+      "targets": [
+        ["css=#hnf-header-profile .hnf-btn__inner", "css:finder"],
+        ["xpath=//li[@id='hnf-header-profile']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hej! Log in or sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c425bc1a-e2f2-4a7e-b35c-87e9ecebcd1c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3c43f50-63d2-43fd-b71c-ab02ac07e5d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38d175f-0e8b-4330-ae87-d3ca64cb59f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "micke"
+    }, {
+      "id": "12e96fb2-764e-4fcd-b760-f77a2ebf02de",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfb387ad-9d15-483a-96c1-3a9ae7724eb6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a82e1b40-9997-4c04-a66e-ce9439ac6b4a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ca94860-85f0-4b51-b3a7-04fcdb103345",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,9.600000381469727)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac5d6d06-0b9e-4289-9171-45603fa14c5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(3) > .pip-image",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(3) > .pip-image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/ca/en/images/products/micke-desk-white__0851508_pe565256_s5.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/a/div/span[2]/img", "xpath:idRelative"],
+        ["xpath=//span[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "941bdf42-4487-48f2-ba87-87e4d3cc52f9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,42.400001525878906)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf34ab90-8b33-45e6-87bd-78b1b202dba2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,666.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b1914e8-d319-4e50-ba27-d57c9b87cfdb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pip-btn--fluid .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--fluid .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[5]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53f8314-a13b-40e1-9317-fa69f7b4bad5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-btn--fluid .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--fluid .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[5]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd65abb0-3e70-436c-a521-a51a85c4838c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64db46a0-2600-484d-88fa-3ab77981e904",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rec-btn--icon-primary-inverse > .rec-btn__inner",
+      "targets": [
+        ["css=.rec-btn--icon-primary-inverse > .rec-btn__inner", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3e666ad-749e-44ec-8acb-a3f96e4609d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01b958a0-00dd-4dc7-8c50-e8ebf4e47b3c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "104fd308-ac7a-4968-8c24-6df72017ffb4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5b2bf85-2009-4eb7-bf88-15fa9dc34627",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/shoppingcart/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab24742b-f961-48fe-8e41-af51a5c551a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,480)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b0d0259-1352-4c27-a883-1a6a4b757819",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=MICKE",
+      "targets": [
+        ["linkText=MICKE", "linkText"],
+        ["css=.product_name__TsEv2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MICKE')]", "xpath:link"],
+        ["xpath=//ul[@id='aria_product_description_80213074']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/p/-80213074')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MICKE')]", "xpath:innerText"]
+      ],
+      "value": "MICKE"
+    }, {
+      "id": "1aff5706-5c57-44dc-af4a-818ce6dff1bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove product",
+      "targets": [
+        ["linkText=Remove product", "linkText"],
+        ["css=.productControlsWithStepper_remove__qkMpH > .cart-ingka-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove product')]", "xpath:link"],
+        ["xpath=//a[@type='tertiary']", "xpath:attributes"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div[6]/div/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efe42a7d-5b68-416c-b267-705cf601bbd8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dcc9c4f5-d2c0-45f4-88be-89f6071223a5",
+    "name": "cart_remove_exists",
+    "commands": [{
+      "id": "32160988-cc33-40be-95db-99fdbc838c92",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32b1f273-dc88-47c8-9d80-b1058ca1b9d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "914x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ea42dca-d7c3-448f-916c-18fc81f546a4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cab38dd1-657f-4af9-9533-c3758a262ad9",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02fb2203-92c1-4284-be34-35f8775bd2f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.search-field__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "micke"
+    }, {
+      "id": "bc213bce-8462-451a-a34f-16aba34ffa92",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-box__searchbutton",
+      "targets": [
+        ["id=search-box__searchbutton", "id"],
+        ["css=#search-box__searchbutton", "css:finder"],
+        ["xpath=//button[@id='search-box__searchbutton']", "xpath:attributes"],
+        ["xpath=//span[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "316e0af6-6b60-470b-8ce0-98a7dffdf183",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "476d03ae-1835-4386-a6c1-cd7654bdc482",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e6b289a-fef8-499f-8bcb-0f63c47cfab2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,9.600000381469727)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a90c11a-52a5-493f-8634-e22c5c48544f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(3) > .pip-image",
+      "targets": [
+        ["css=.plp-product-list__products > .plp-fragment-wrapper:nth-child(1) .pip-aspect-ratio-box:nth-child(3) > .pip-image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.ikea.com/ca/en/images/products/micke-desk-white__0851508_pe565256_s5.jpg?f=xxs')]", "xpath:img"],
+        ["xpath=//section[@id='product-list']/div/div/div[2]/div/div/a/div/span[2]/img", "xpath:idRelative"],
+        ["xpath=//span[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "522756c8-2ec7-4ac7-ab68-72e01c82138f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,42.400001525878906)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3178c5f4-e9d9-4337-bd95-91c1fd3186db",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,666.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b21dea8d-26c7-490f-839f-5885b660039d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pip-btn--fluid .pip-btn__label",
+      "targets": [
+        ["css=.pip-btn--fluid .pip-btn__label", "css:finder"],
+        ["xpath=//div[@id='pip-buy-module-content']/div[5]/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5bb84c5-1422-4dd0-8cda-2ed063d4c291",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11ee0bad-5b7f-437a-bd3f-9e91093eeac1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rec-btn--icon-primary-inverse > .rec-btn__inner",
+      "targets": [
+        ["css=.rec-btn--icon-primary-inverse > .rec-btn__inner", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35b9e2b1-3bc3-4812-b382-42948a21838b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-shopping-cart-icon",
+      "targets": [
+        ["css=.js-shopping-cart-icon", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f9a344c-2328-4f05-b861-68020d27d9c5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63a6bbac-40f4-4f22-96b9-022626e97b83",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner",
+      "targets": [
+        ["css=.hnf-location__btn-wrapper:nth-child(2) .hnf-btn__inner", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26ce73ea-1426-47dd-8497-aa7b5b09ed5c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/shoppingcart/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae38eafa-1ef3-4b6c-8e8d-ba50d4304f6a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,480)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8ff4308-1cb3-4b94-8e41-af353c68ab89",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove product",
+      "targets": [
+        ["linkText=Remove product", "linkText"],
+        ["css=.productControlsWithStepper_remove__qkMpH > .cart-ingka-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove product')]", "xpath:link"],
+        ["xpath=//a[@type='tertiary']", "xpath:attributes"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div[6]/div/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0ab6d06-cd22-4368-a777-26f87a30bb11",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.noProducts_header__9wz2x",
+      "targets": [
+        ["css=.noProducts_header__9wz2x", "css:finder"],
+        ["xpath=//main[@id='one-checkout']/main/div/div/div/div[21]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Your cart is empty')]", "xpath:innerText"]
+      ],
+      "value": "Your cart is empty"
+    }, {
+      "id": "065fd990-2c13-47e5-950a-70dfb5d58c4b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fc48caad-5e4c-4aea-a56f-e51d18c25ad7",
+    "name": "cart_remove_exists_not",
+    "commands": [{
+      "id": "93af5174-f1d8-489c-bb7d-b23c551dbc29",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ikea.com/ca/en/shoppingcart/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6a22731-61f6-440e-8afa-1ea3959c6204",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,480)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "438763cc-dd6b-471e-9c84-c2e07c8b05c6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "//linkText=Remove product",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "9fd4976b-6a35-42f0-961d-6c27ab38aaf1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4bb593bc-1ef8-4977-b535-5fef7eb1aa70",
+    "name": "Shopping Cart",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d8fb5fc-26dc-40ea-9c01-61bc6023d2de", "dcc9c4f5-d2c0-45f4-88be-89f6071223a5", "fc48caad-5e4c-4aea-a56f-e51d18c25ad7"]
+  }, {
+    "id": "6d41fa86-a9b8-487a-95da-5dc832acd3e6",
+    "name": "Hamburger Menu",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bd0a2c1b-1ce2-455f-bc1f-a0d3877a4399", "dda4c2ca-e312-4199-a2fe-74b7f9b530a3", "e0cbc635-eea7-4eb7-b0f7-1ba7dd9876eb", "db764623-3f52-4056-bbd5-eea436e9f25f", "cc242ac1-fc7d-4871-83e3-c2fcbfab7e59"]
+  }, {
+    "id": "7cf4be56-4cda-4878-af6e-2d94621e30d8",
+    "name": "Search Bar",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c37314c5-5a26-4eb5-a8c4-3d9b946ef856", "ece1e532-e3f6-4cdc-b681-8eb4d44483dc", "9dc0fa71-6989-44d1-a587-1161c3783382", "fce52998-6b21-4e75-ada0-f8792d2daf98", "695054e1-2d11-4426-bc0e-4c55d136c37c", "8be6e456-c73f-4f1f-a3f3-7285ad542f25", "edf3d459-dbc1-49bb-bc05-ff85e6fc579d", "374ab37d-1bd8-4208-a7e5-070695fae796", "450c9e45-6df7-440f-81a3-bfe940046f6f"]
+  }, {
+    "id": "d91d58b2-1ddc-40f5-9c43-a777e0eb4246",
+    "name": "Different Stores",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79c7e2ef-9b91-4991-9f6e-39b0cab6b9af", "ba63e521-f86f-496a-b900-14ecf0d5f41f", "01da62bb-61e8-4317-b81c-9f6484f7256e", "21479689-cec6-470f-b48a-1d3086d7ec5b"]
+  }],
+  "urls": ["https://www.ikea.com/", "https://www.ikea.com/ca/en/"],
+  "plugins": []
+}
