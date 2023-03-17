@@ -248,7 +248,7 @@
     }]
   }, {
     "id": "53c7b808-117a-466e-8059-49cc7892b3d3",
-    "name": "Add item to waitlist",
+    "name": "Add item to wishlist",
     "commands": [{
       "id": "c36bf490-8b94-4173-9bfd-7e5a49a44d1c",
       "comment": "",
@@ -1389,7 +1389,7 @@
     }]
   }, {
     "id": "5320d0e1-95e4-4ed2-b6b2-8de979da9132",
-    "name": "Remove item from waitlist",
+    "name": "Remove item from wishlist",
     "commands": [{
       "id": "12e1d5e9-379f-4ab2-85a1-4a1360840f93",
       "comment": "",
